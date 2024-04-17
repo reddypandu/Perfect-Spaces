@@ -511,7 +511,7 @@ mark,
 
 .initialism {
   font-size: 90%;
-  text-transform: uppercase;
+  text-transform: uppercase;nav-item nav-link
 }
 
 .blockquote {
@@ -4326,23 +4326,31 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+.navbar-dark .navbar-nav .nav-link {.nav-bar::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  background: white;
+}
+  color:  rgba(16, 232, 85, 0.75);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(16, 232, 85, 0.75);
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(16, 232, 85, 0.75);
 }
 
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: black;
 }
 
 .navbar-dark .navbar-toggler {
@@ -9520,7 +9528,7 @@ h6 {
   height: 50%;
   top: 0;
   left: 0;
-  background: #181818;
+  background: white;
 }
 
 .nav-bar::after {
@@ -9536,13 +9544,13 @@ h6 {
 .navbar-dark .navbar-nav .nav-link {
   padding: 30px 15px;
   letter-spacing: 1px;
-  color: #F3F6FF;
+  color: black;
   outline: none;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #DFB163;
+  color: green;
 }
 
 @media (max-width: 991.98px) {
