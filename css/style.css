@@ -9695,3 +9695,7 @@ h6 {
 .image-border{
   border-radius: 5px;
 }
+.btn{
+  color:#9ECC47;
+  border: 1px solid #9ECC47;
+}
