@@ -30,48 +30,13 @@
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-white pr-3" href="">FAQs</a>
-                        <span class="text-white">|</span>
-                        <a class="text-white px-3" href="">Help</a>
-                        <span class="text-white">|</span>
-                        <a class="text-white pl-3" href="">Support</a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-white pl-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
+   
 
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container position-relative" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+            <nav class="navbar navbar-expand-lg bg-white navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="" class="navbar-brand">
                     <img src="./img/logo.png" alt="">
                 </a>
@@ -95,15 +60,15 @@
 
 
     <!-- Under Nav Start -->
-    <div class="container-fluid bg-white py-3">
+    <div class="container-fluid bg-dark py-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 text-left mb-3 mb-lg-0">
                     <div class="d-inline-flex text-left">
                         <h1 class="flaticon-office font-weight-normal text-primary m-0 mr-3"></h1>
                         <div class="d-flex flex-column">
-                            <h5>Our Office</h5>
-                            <p class="m-0">Flat no:105, Manikonda, Hyderabad</p>
+                            <h5 class="text-white">Our Office</h5>
+                            <p class="m-0 text-white">Manikonda, Hyderabad</p>
                         </div>
                     </div>
                 </div>
@@ -111,8 +76,8 @@
                     <div class="d-inline-flex text-left">
                         <h1 class="flaticon-email font-weight-normal text-primary m-0 mr-3"></h1>
                         <div class="d-flex flex-column">
-                            <h5>Email Us</h5>
-                            <p class="m-0"> info@perfectspaces.in</p>
+                            <h5 class="text-white">Email Us</h5>
+                            <p class="m-0 text-white">info@perfectspaces.in</p>
                         </div>
                     </div>
                 </div>
@@ -120,8 +85,8 @@
                     <div class="d-inline-flex text-left">
                         <h1 class="flaticon-telephone font-weight-normal text-primary m-0 mr-3"></h1>
                         <div class="d-flex flex-column">
-                            <h5>Call Us</h5>
-                            <p class="m-0">+91 96992 09999</p>
+                            <h5 class="text-white">Call Us</h5>
+                            <p class="m-0 text-white">+91 96992 09999</p>
                         </div>
                     </div>
                 </div>
@@ -131,18 +96,70 @@
     <!-- Under Nav End -->
 
 
-    <!-- Page Header Start -->
-    <div class="container-fluid bg-secondary py-5">
+   
+    <div class="container-fluid bg-secondary py-3">
         <div class="container py-5">
             <div class="row align-items-center py-4">
-                <div class="col-md-6 text-center text-md-left">
-                    <h1 class="mb-4 mb-md-0 text-primary text-uppercase">Satyam Garu 2bhk-NRT</h1>
+                <div class="col-md-6 text-center text-md-left d-flex flex-row justify-content-start">
+                    <div>
+                    <h1 class="mb-4 mr-5 mb-md-0 text-primary text-uppercase">Satyam Garu 2bhk-NRT</h1>
+                    </div>
+
+
+
+                    <div class="mb-3 ml-5"> 
+                    <div class="cube">
+                        <div class="face front font-size:10px"><img src="./img/logo.png" alt=""></div>
+                        <div class="face back"><img src="./img/logo.png" alt=""></div>
+                        <div class="face right"><img src="./img/logo.png" alt=""></div>
+                        <div class="face left"><img src="./img/logo.png" alt=""></div>
+                        <div class="face top"><img src="./img/logo.png" alt=""></div>
+                        <div class="face bottom"><img src="./img/logo.png" alt=""></div>
+                    </div>
                 </div>
+                    <style>
+                       
+                        .cube {
+                            width: 100px;
+                            height: 100px;
+                            transform-style: preserve-3d;
+                            animation: rotateCube 4s infinite linear;
+                            padding-left: 20px;
+                        }
+                
+                        .face {
+                            width: 150px;
+                            height: 150px;
+                            position: absolute;
+                            text-align: center;
+                            line-height: 100px;
+                            font-size:10px;
+                            color:black;
+                            font-weight: 800;
+                            background-color: white;
+                            border: 5px solid #DFB163;
+                            border: 5px solid green;
+                        }
+                
+                        .front  { transform: translateZ(50px); }
+                        .back   { transform: rotateY(180deg) translateZ(50px); }
+                        .right  { transform: rotateY(90deg) translateZ(50px); }
+                        .left   { transform: rotateY(-90deg) translateZ(50px); }
+                        .top    { transform: rotateX(90deg) translateZ(50px); }
+                        .bottom { transform: rotateX(-90deg) translateZ(50px); }
+                
+                        @keyframes rotateCube {
+                            from { transform: rotateY(0); }
+                            to { transform: rotateY(360deg); }
+                        }
+                    </style> 
+                </div>
+
                 <div class="col-md-6 text-center text-md-right">
                     <div class="d-inline-flex align-items-center">
                         <a class="btn btn-outline-primary" href="">Home</a>
                         <i class="fas fa-angle-double-right text-primary mx-2"></i>
-                        <a class="btn btn-outline-primary disabled" href="">Our Projects</a>
+                        <a class="btn btn-outline-primary" href="">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -384,9 +401,9 @@
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-primary mb-4">Get In Touch</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>THE NEST apartment, AR infra & developers B2 Block , Flat no : 105 Survey no : 196/AA,195/E & 197/3 Sri Laxmi Nagar colony, Rajendra Nagar mandal , Manikonda, Near Manikonda marri chetu, R.R Dist - 500089 Hyderabad Telangana.</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+91 96992 09999</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@perfectspaces.in</p>
                 <div class="d-flex justify-content-start mt-4">
                     <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
                         style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
@@ -401,21 +418,21 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-primary mb-4">Quick Links</h4>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Projects</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                   
+                    <a class="text-white mb-2" href="project.html"><i class="fa fa-angle-right mr-2"></i>Our Projects</a>
+                    <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-primary mb-4">Popular Links</h4>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Projects</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                   
+                    <a class="text-white mb-2" href="project.html"><i class="fa fa-angle-right mr-2"></i>Our Projects</a>
+                    <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -436,9 +453,9 @@
         </div>
         <div class="container border-top border-secondary pt-5">
             <p class="m-0 text-center text-white">
-                &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed
+                &copy; <a class="text-white font-weight-bold" href="#">Perfect Spaces</a>. All Rights Reserved. Designed
                 by
-                <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+                <a class="text-white font-weight-bold" href="https://www.thepatternscompany.com/">The Patterns Company</a>
             </p>
         </div>
     </div>
