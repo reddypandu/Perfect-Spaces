@@ -239,8 +239,8 @@
                                         <div class="col-md-7">
                                             <div class="parallax-item left-direction">
                                                 <div class="paralax-media">
-                                                    <div class="paralax-wrap">
-                                                        <img class="height:50px; width:100px; img-fluid m-3 p-2"
+                                                    <div class="paralax-wrap ">
+                                                        <img class="height:50px; width:100px; img-fluid m-3 p-2 border-radius:5px;"
                                                             src="img/navyaimgs1.jpg" alt="">
                                                     </div>
                                                     <div class="parallax-deck"
@@ -810,6 +810,7 @@
     <style>
         .paralax-media {
             position: relative;
+          
         }
 
         .parallax-deck-item h3:before {
@@ -856,12 +857,17 @@
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
             margin-bottom: 40px;
+            
+
         }
         @media(max-width:992px){
             .paralax-media .parallax-deck {
             position: unset;
           
         }
+        }
+        .image-border{
+            border-radius: 5px;
         }
         
     </style>
